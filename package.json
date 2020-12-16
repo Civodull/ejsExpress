@@ -1,0 +1,26 @@
+{
+    "name": "index.html",
+    "version": "1.0.0",
+    "description": "fichierJsonVersHtml",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "author": "Ludovic",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "chance": "^1.1.7",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "jshint": "^2.12.0",
+        "node-fetch": "^2.6.1",
+        "require": "^2.4.20",
+        "shuffle-array": "^1.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
+}

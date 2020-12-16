@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-">
+    <title>Situation M&eacute;t&eacute;orologique</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script src='jquery-3.2.1.min.js'></script>
+</head>
+
+<body>
+    <div class="titree">
+        <h1 text-align="center">Situation météorologique</h1>
+    </div>
+    <div id="container">
+        <div class="bloc">
+            <h2 style="text-align:center">
+                <%= valeurJson[0].region %>
+            </h2>
+            <div class="gauche">
+                <img src="im4" alt="Meteo cote Nord" class="onOff" id="etat">
+                <img src="/im" alt="Meteo cote Est" class="center">
+                <h3> Temperature :
+                    <span id="zone1Tem"><%= valeurJson[0].temperature %></span> &deg;C </h3>
+                <h3> Humidité :
+                    <span id="zone1Hum"></span> g/m3 </h3>
+                <button onClick="buttonOn()" class="styled" type="button">
+                    Activer la vane
+                </button>
+                <button onClick="buttonOff()" class="styled b2" type="button">
+                   Desactiver la vane
+                </button>
+            </div>
+        </div>
+        <div class="bloc">
+            <h2 style="text-align:center">
+                <%= valeurJson[1].region %>
+            </h2>
+            <div class="gauche">
+                <img src="im4" alt="Meteo cote Nord" class="onOff" id="etat1">
+                <img src="/im3" alt="Meteo cote Ouest" class="center">
+                <h3> Temperature :
+                    <span id="zone2Tem"></span> &deg;C </h3>
+                <h3> Humidité :
+                    <span id="zone2Hum"></span> g/m3 </h3>
+                <button onClick="dButtonOn()" class="styled" type="button">
+                    Activer la vane
+                </button>
+                <button onClick="dButtonOff()" class="styled b2" type="button">
+                   Desactiver la vane
+                </button>
+            </div>
+        </div>
+        <div class="bloc" id="d">
+            <h2 style="text-align:center">
+                <%= valeurJson[2].region %>
+            </h2>
+            <div class="gauche">
+                <img src="im4" alt="Meteo cote Nord" class="onOff" id="etat2">
+                <img src="/im2" alt="Meteo cote Ouest" class="center">
+                <h3> Temperature :
+                    <span id="zone3Tem"></span> &deg;C </h3>
+                <h3> Humidité :
+                    <span id="zone3Hum"></span> g/m3 </h3>
+                <button onClick="tButtonOn()" class="styled" type="button">
+                    Activer la vane
+                </button>
+                <button onClick="tButtonOff()" class="styled b2" type="button">
+                   Desactiver la vane
+                </button>
+            </div>
+        </div>
+        <div class="bloc">
+            <h2 style="text-align:center">
+                <%= valeurJson[3].region %>
+            </h2>
+            <div class="gauche">
+                <img src="im4" alt="Meteo cote Nord" class="onOff" id="etat3">
+                <img src="/im1" alt="Meteo cote Est" class="center">
+                <h3> Temperature :
+                    <span id="zone4Tem"></span> &deg;C </h3>
+                <h3> Humidité :
+                    <span id="zone4Hum"></span> g/m3 </h3>
+                <button onClick="qButtonOn()" class="styled" type="button">
+                    Activer la vane
+                </button>
+                <button onClick="qButtonOff()" class="styled b2" type="button">
+                   Desactiver la vane
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascript"></script>
+</body>
+
+</html>
